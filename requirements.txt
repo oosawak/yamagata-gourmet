@@ -1,0 +1,4 @@
+mistune>=3.0,<4
+PyYAML>=6.0,<7
+Pillow>=10,<13
+bleach>=6.1,<7

@@ -1,0 +1,15 @@
+id: gourmet
+name: 山形グルメ案内
+short_name: 山形グルメ
+kind: media
+kind_label: グルメメディア
+accent: '#8d5b2b'
+eyebrow: TASTE OF YAMAGATA
+hero_title: '山形のおいしいものを、
+ゆっくりめぐる。'
+description: 郷土料理、麺、果物、喫茶。山形のおいしい風景をたどる、架空のグルメサイトです。
+subtitle: 山形の味を集めた読みもの
+hero_note: 郷土の味と小さな旅
+about: 架空のグルメ読みものサイトです。実在の店舗評価や営業情報ではなく、デザイン検証用のサンプル記事を掲載しています。
+
+hero_image: gourmet/hero-imoni.webp

@@ -1,0 +1,49 @@
+{
+  "sites": {
+    "gourmet": {
+      "name": "Yamagata Food Guide",
+      "short_name": "Yamagata Food",
+      "kind_label": "Food magazine",
+      "hero_title": "Take your time exploring\nthe flavors of Yamagata.",
+      "description": "Regional dishes, noodles, fruit and cafés: a fictional guide to Yamagata flavors.",
+      "subtitle": "Stories about the tastes of Yamagata",
+      "hero_note": "Local flavors and short trips",
+      "about": "This is a fictional food guide. Articles are demonstrations, not reviews or verified business information.",
+      "source_hash": "769a6be68c97da952862cf103b394f8bc834bd4bc3290ad35161b183643d1fbe"
+    }
+  },
+  "posts": {
+    "gourmet:imoni-guide": {
+      "title": "Autumn means imoni gatherings",
+      "category": "Regional cuisine",
+      "summary": "A seasonal story about the famous Yamagata riverside imoni parties.",
+      "cover_alt": "A photorealistic demo image of a pot of Yamagata imoni",
+      "markdown": "In autumn, Yamagata comes alive with imoni gatherings. Friends and neighbors meet by the river to share a large pot of taro stew—an occasion that feels like a seasonal tradition.\n\nSoy sauce or miso? Different ingredients and regional styles make the conversation as good as the food.",
+      "source_hash": "ea92fd668b88aec501a56018b708991e727bf6d11c22f1207bff3b5c8de2db83"
+    },
+    "gourmet:yonezawa-ramen": {
+      "title": "Exploring Yonezawa ramen",
+      "category": "Noodles",
+      "summary": "Curly, fine noodles and clear broth in a comforting local bowl.",
+      "cover_alt": "A photo-style image of a bowl of Yonezawa ramen",
+      "markdown": "A gentle soy sauce broth paired with delicate, curly noodles gives Yonezawa ramen its distinctive appeal. It is the kind of bowl you could happily return to again and again.\n\nThis sample introduces it as both a memorable meal on a trip and a familiar everyday taste.",
+      "source_hash": "c74fcfcc7f6eb1db5dffd62095de12ef133bb63ac111045b23067c64b9419851"
+    },
+    "gourmet:fruit-dessert": {
+      "title": "A sweet moment with Yamagata fruit",
+      "category": "Desserts",
+      "summary": "A fictional food diary of fruit parfaits and desserts in Yamagata.",
+      "cover_alt": "A photo-style image of cherries growing on a tree",
+      "markdown": "Cherries, grapes and La France pears are among Yamagata’s delights. Seasonal sweets appear in cafés and pastry shops across this fruit-growing region.\n\nThis sample article imagines simple desserts that let the fruit’s own flavor shine.",
+      "source_hash": "6e03c4c2a6786e210378f90555eef4e64778016dfe045b797c2185485671dfb2"
+    },
+    "gourmet:onsen-cafe": {
+      "title": "A café break in an onsen town",
+      "category": "Cafés",
+      "summary": "A fictional café stop while strolling through a Yamagata hot-spring town.",
+      "cover_alt": "A photo-style image of a wooden café in the mountains",
+      "markdown": "Beyond the rising steam is a small café. A coffee break during a stroll is a lovely way to experience the slower rhythm of a place.\n\nThis demo is written as a light, travel-diary-style food story.",
+      "source_hash": "32f38a04664da7fc362cdc027dc5037a913fa7f9b2bbaf9e8054aecc573040a0"
+    }
+  }
+}
