@@ -11,9 +11,9 @@ def run():
         'portal':json.loads((DIST/'data/portal.json').read_text(encoding='utf-8')),
         'sites':{},'posts':{}
     }
-    for path in (DIST/'data/sites').glob('*.json'):
+    for path in sorted((DIST/'data/sites').glob('*.json')):
         all_data['sites'][path.stem]=json.loads(path.read_text(encoding='utf-8'))
-    for path in (DIST/'data/posts').glob('*/*.json'):
+    for path in sorted((DIST/'data/posts').glob('*/*.json')):
         all_data['posts'][f'{path.parent.name}:{path.stem}']=json.loads(path.read_text(encoding='utf-8'))
     css=(ROOT/'assets/style.css').read_text(encoding='utf-8')
     js=(ROOT/'assets/app.js').read_text(encoding='utf-8')

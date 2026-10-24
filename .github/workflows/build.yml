@@ -1,0 +1,59 @@
+name: Build site and commit generated files
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'scripts/**'
+      - 'assets/**'
+      - 'requirements.txt'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Build site
+        run: python scripts/build.py
+      - name: Run tests
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Export offline preview
+        run: python scripts/export_preview.py
+      - name: Sync generated files
+        run: |
+          rsync -a --delete dist/data/ data/
+          rsync -a --delete dist/data/ docs/data/
+          cp dist/preview.html preview.html
+          cp dist/preview.html docs/preview.html
+      - name: Commit generated changes
+        run: |
+          git add -A data docs preview.html
+          if git diff --cached --quiet; then
+            echo 'No generated changes.'
+          else
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update generated site files'
+            git push origin HEAD:main
+          fi
