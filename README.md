@@ -2,6 +2,14 @@
 
 このリポジトリは独立したGitHub Pagesサイトです。**ほかの店舗のソースコードや記事は含まれていません**。Markdownから日本語＋英語の静的JSONを生成し、共有用 `data/sites/gourmet.json` を公開します。
 
+## 現在の運用（自動化済み）
+
+- 公開サイト: https://oosawak.github.io/yamagata-gourmet/
+- 記事のMarkdown（`content/`）を `main` へpushすると、GitHub Actions「Build site and commit generated files」が自動でビルド・テストを実行し、生成物（`data/`、`docs/`、`preview.html`）をbotがcommitして戻します。**生成物を手で編集する必要はありません。**
+- GitHub Pagesは `main` ブランチの `/docs` から配信しています（Source = Deploy from a branch）。
+- 統合ポータル「まちのつながり」（community-portal）が、このサイトのフィード `data/sites/gourmet.json` を6時間ごとに取得して掲載します。
+- 下記「最初の公開手順」は配布テンプレート由来の一般手順であり、このリポジトリの現在の運用とは異なります。
+
 ## 最初の公開手順
 
 1. GitHubで**空のPublicリポジトリ**を作成してください（READMEの自動作成は選ばない）。
@@ -35,11 +43,11 @@ git push -u origin main
 - Actionsで自動的に `GITHUB_REPOSITORY` からPagesのURLを組み立て、記事 `url` に **完全なHTTPS URL** を埋め込みます。
 - カスタムドメインの場合は `Settings → Secrets and variables → Actions → Variables` に `SITE_URL=https://example.com/` を指定し、**Actions → Run workflow** で再ビルドしてください。
 - 統合ポータルへのリンクをヘッダーに表示したい場合は同じVariablesに `PORTAL_URL=https://OWNER.github.io/community-portal/` を設定します（任意）。設定したあとに **Actions → Run workflow** で再ビルドしてください。
-- 公開フィード：`https://OWNER.github.io/REPOSITORY/data/sites/gourmet.json`
-- 記事詳細JSON：`https://OWNER.github.io/REPOSITORY/data/posts/gourmet/<slug>.json`
+- 公開フィード：`https://oosawak.github.io/yamagata-gourmet/data/sites/gourmet.json`
+- 記事詳細JSON：`https://oosawak.github.io/yamagata-gourmet/data/posts/gourmet/<slug>.json`
 - 公開フィードには記事の**タイトル・本文要約・Base64サムネイル・英語テキスト・正規URL**を含み、本文自体は含みません。
 - 別サイトの記事は、独立サイト側で全件を複製せず、`PORTAL_URL` のリンクから確認できます。
-- **統合ポータルは記事公開を即時通知では受けません**。標準では毎日の再取得か、ポータルActionsの手動実行で同期します。
+- **統合ポータルは記事公開を即時通知では受けません**。ポータル側のActionsが6時間ごとに再取得して同期します（手動実行も可能）。
 
 ## ローカル確認
 
