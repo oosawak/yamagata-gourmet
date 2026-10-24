@@ -90,7 +90,7 @@ class InlineImageRenderer(mistune.HTMLRenderer):
         uri,_=image_uri(url,'detail')
         return f'<img src="{escape(uri,quote=True)}" alt="{escape(text,quote=True)}" loading="lazy">'
 
-md=mistune.create_markdown(renderer=InlineImageRenderer(escape=True))
+md=mistune.create_markdown(renderer=InlineImageRenderer(escape=True),plugins=['table'])
 
 def parse_md(path:Path):
     raw=path.read_text(encoding='utf-8')

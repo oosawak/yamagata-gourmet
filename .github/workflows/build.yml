@@ -44,6 +44,7 @@ jobs:
         run: |
           rsync -a --delete dist/data/ data/
           rsync -a --delete dist/data/ docs/data/
+          rsync -a --delete dist/assets/ docs/assets/
           cp dist/preview.html preview.html
           cp dist/preview.html docs/preview.html
       - name: Commit generated changes
