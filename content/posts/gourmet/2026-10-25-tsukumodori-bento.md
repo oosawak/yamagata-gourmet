@@ -5,6 +5,7 @@ category: 郷土料理
 summary: 昔から山形市を代表するお弁当「九十九鶏弁当」。電車の旅のお供として、地元の人の思い出に残る味です。
 cover: gourmet/tsukumodori-bento.webp
 cover_alt: 九十九鶏弁当を描いた水彩調イラスト
+map_query: 九十九鶏弁当
 type: article
 source_url: https://www.threads.com/@dai.takahashi.92/post/DeLkCtJE4iy
 ---

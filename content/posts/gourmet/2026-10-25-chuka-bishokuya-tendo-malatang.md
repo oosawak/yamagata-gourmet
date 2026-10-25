@@ -5,6 +5,7 @@ category: その他
 summary: 天童市の中華料理店が新しく始めたマーラータン。汁ありの麻辣湯と、汁なしの麻辣バンが紹介されています。
 cover: gourmet/chuka-bishokuya-tendo-malatang.webp
 cover_alt: マーラータンを描いた水彩調イラスト
+map_query: 中華美食屋 天童店 天童市糠塚1-6-26
 type: article
 source_url: https://www.instagram.com/reel/DeRNV-oT2SA/
 ---

@@ -211,6 +211,9 @@ def generate():
         if embed_platform:
             summary['embed_url']=source_url
             summary['embed_platform']=embed_platform
+        map_query=str(fm.get('map_query','')).strip()
+        if map_query:
+            summary['map_query']=map_query
         if item_type=='product':
             if SITE_ID!='fruit':raise ValueError('Products only supported in fruit demo')
             required(fm,['price_jpy','unit','stock'],postpath)

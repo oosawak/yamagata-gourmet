@@ -5,6 +5,7 @@ category: その他
 summary: 山形県のローカルチェーン「とん八」。土日祝でもランチが楽しめ、季節限定の芋煮とんかつ膳が登場しています。
 cover: gourmet/tonpachi-imoni-tonkatsu.webp
 cover_alt: 芋煮ととんかつの膳を描いた水彩調イラスト
+map_query: とん八 山形県
 type: article
 source_url: https://www.threads.com/@makoyan1028/post/Ddl3aABn98Y
 ---

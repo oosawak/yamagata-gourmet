@@ -5,6 +5,7 @@ category: その他
 summary: 天童市高擶の蕎麦処が「飯処」としてリニューアル。かき揚げ天丼と角煮、手作りプリンが評判です。
 cover: gourmet/kirikiri-tendo.webp
 cover_alt: 大きなかき揚げ天丼を描いた水彩調イラスト
+map_query: そば処 吉里吉里 天童市
 type: article
 source_url: https://www.threads.com/@mii.yamagata25/post/DVlFtL8kqO7
 ---

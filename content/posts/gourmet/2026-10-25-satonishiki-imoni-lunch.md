@@ -5,6 +5,7 @@ category: 郷土料理
 summary: 東根市の佐藤錦が提供する芋煮ランチ。芋煮とおにぎり、手作り惣菜のセットや、さくらんぼのスイーツが紹介されています。
 cover: gourmet/satonishiki-imoni-lunch.webp
 cover_alt: 芋煮ランチを描いた水彩調イラスト
+map_query: 佐藤錦 東根市三日町2-1-24
 type: article
 source_url: https://www.threads.com/@yu.satonishiki/post/Dc8aZ2lGlSA
 ---

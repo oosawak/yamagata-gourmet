@@ -5,6 +5,7 @@ category: その他
 summary: 山形のもみいち食堂。唐揚げ定食が評判で、未就学児はごはんと味噌汁が無料という良心的なサービスもあります。
 cover: gourmet/momoichi-shokudo.webp
 cover_alt: 唐揚げ定食を描いた水彩調イラスト
+map_query: もみいち食堂
 type: article
 source_url: https://www.threads.com/@y.nalu/post/DeyIP5qD71P
 ---

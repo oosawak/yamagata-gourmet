@@ -5,6 +5,7 @@ category: 郷土料理
 summary: 山形市・山寺のお休み処。山形名物の芋煮を楽しめる芋煮セットや、山寺限定の紅花ジェラートが紹介されています。
 cover: gourmet/benibana-yamadera.webp
 cover_alt: 芋煮セットと紅花ジェラートを描いた水彩調イラスト
+map_query: お休み処 べにばな 山寺
 type: article
 source_url: https://www.instagram.com/reel/DewCTVKBmdo/
 ---

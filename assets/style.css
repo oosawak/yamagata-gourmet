@@ -71,3 +71,4 @@
 .embed{display:flex;justify-content:center;margin:0 auto 24px;max-width:560px}
 .embed blockquote{width:100%}
 .heronote{font-size:11px;color:#7a847b;margin-top:14px;max-width:680px;line-height:1.9}
+.mapbox{margin-top:26px;border:1px solid var(--line);border-radius:13px;padding:18px;background:#fbfaf5}.mapbox h3{font-size:15px;margin-bottom:10px}.maplinks{display:flex;gap:10px;flex-wrap:wrap}.mapbox p{font-size:11px;color:var(--muted);margin:10px 0 0}

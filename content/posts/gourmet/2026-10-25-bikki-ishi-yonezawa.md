@@ -5,6 +5,7 @@ category: その他
 summary: 米沢市にある「ビッキ石」。ロースト丼が美味しいと評判のお店です。
 cover: gourmet/bikki-ishi-yonezawa.webp
 cover_alt: ロースト丼を描いた水彩調イラスト
+map_query: ビッキ石 米沢市
 type: article
 source_url: https://www.threads.com/@miki_world38/post/Dd81DMlmtKe
 ---

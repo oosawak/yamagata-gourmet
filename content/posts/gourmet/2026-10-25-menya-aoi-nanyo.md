@@ -5,6 +5,7 @@ category: 麺
 summary: 山形県南陽市の人気店。リピーターが多いという担々麺が紹介されています。
 cover: gourmet/menya-aoi-nanyo.webp
 cover_alt: 担々麺を描いた水彩調イラスト
+map_query: 麺屋 葵 南陽市
 type: article
 source_url: https://www.instagram.com/reel/DPyFjqLEwU9/
 ---
