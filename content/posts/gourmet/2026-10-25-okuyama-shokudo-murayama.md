@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: その他
 summary: 山形県村山市の食堂。昔ながらのかまどで炊くごはんと、大きなエビフライやもつ煮込み定食が紹介されています。
 cover: gourmet/okuyama-shokudo-murayama.webp
-cover_alt: エビフライ定食を描いたアニメ調イラスト
+cover_alt: エビフライ定食を描いた水彩調イラスト
 type: article
 source_url: https://www.instagram.com/reel/DP8z8kqEzfr/
 ---

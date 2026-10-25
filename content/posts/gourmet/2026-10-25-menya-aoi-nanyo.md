@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: 麺
 summary: 山形県南陽市の人気店。リピーターが多いという担々麺が紹介されています。
 cover: gourmet/menya-aoi-nanyo.webp
-cover_alt: 担々麺を描いたアニメ調イラスト
+cover_alt: 担々麺を描いた水彩調イラスト
 type: article
 source_url: https://www.instagram.com/reel/DPyFjqLEwU9/
 ---

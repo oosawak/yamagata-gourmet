@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: その他
 summary: 山形市のステーキ店の期間限定企画。リブロースの希少部位リブアイキャップを溶岩石プレートで焼くステーキが紹介されています。
 cover: gourmet/steak-zei-yamagata-shima.webp
-cover_alt: 石焼ステーキを描いたアニメ調イラスト
+cover_alt: 石焼ステーキを描いた水彩調イラスト
 type: article
 source_url: https://www.instagram.com/reel/DeoW9ACzpMA/
 ---

@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: その他
 summary: 白糸の滝ドライブインの山形牛すき焼き重御膳。1,300円でボリューム満点だったと紹介されています。
 cover: gourmet/shiraito-taki-drivein-sukiyaki.webp
-cover_alt: 山形牛すき焼き重を描いたアニメ調イラスト
+cover_alt: 山形牛すき焼き重を描いた水彩調イラスト
 type: article
 source_url: https://www.threads.com/@tom_tomen3939/post/DarVyOmEvC4
 ---

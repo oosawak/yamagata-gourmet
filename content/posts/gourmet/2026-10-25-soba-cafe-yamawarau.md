@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: カフェ
 summary: 山形市のカフェの人気ランチ。山形県産米のおにぎりと6種類の小鉢が並ぶ、限定12食のワンプレートが紹介されています。
 cover: gourmet/soba-cafe-yamawarau.webp
-cover_alt: おにぎりと小鉢のワンプレートを描いたアニメ調イラスト
+cover_alt: おにぎりと小鉢のワンプレートを描いた水彩調イラスト
 type: article
 source_url: https://www.instagram.com/reel/DP1EBItkopn/
 ---

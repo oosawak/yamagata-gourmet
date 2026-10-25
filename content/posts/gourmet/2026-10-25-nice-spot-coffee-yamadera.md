@@ -4,7 +4,7 @@ date: '2026-10-25'
 category: カフェ
 summary: 山形市・山寺の登山口近くにあるコーヒーと焼き菓子のお店。地元の牛乳を使ったフラットホワイトなどが紹介されています。
 cover: gourmet/nice-spot-coffee-yamadera.webp
-cover_alt: 山寺のカフェのコーヒーと焼き菓子を描いたアニメ調イラスト
+cover_alt: 山寺のカフェのコーヒーと焼き菓子を描いた水彩調イラスト
 type: article
 source_url: https://www.instagram.com/reel/De3wvm9h1Ch/
 ---
