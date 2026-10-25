@@ -3,6 +3,8 @@ title: 東根「佐藤錦」の芋煮ランチ — 芋煮とおにぎりと手�
 date: '2026-10-25'
 category: 郷土料理
 summary: 東根市の佐藤錦が提供する芋煮ランチ。芋煮とおにぎり、手作り惣菜のセットや、さくらんぼのスイーツが紹介されています。
+cover: gourmet/satonishiki-imoni-lunch.webp
+cover_alt: 芋煮ランチを描いたアニメ調イラスト
 type: article
 source_url: https://www.threads.com/@yu.satonishiki/post/Dc8aZ2lGlSA
 ---

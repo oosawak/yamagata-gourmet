@@ -3,6 +3,8 @@ title: 山寺「お休み処べにばな」— 芋煮セットと紅花ジェラ
 date: '2026-10-25'
 category: 郷土料理
 summary: 山形市・山寺のお休み処。山形名物の芋煮を楽しめる芋煮セットや、山寺限定の紅花ジェラートが紹介されています。
+cover: gourmet/benibana-yamadera.webp
+cover_alt: 芋煮セットと紅花ジェラートを描いたアニメ調イラスト
 type: article
 source_url: https://www.instagram.com/reel/DewCTVKBmdo/
 ---

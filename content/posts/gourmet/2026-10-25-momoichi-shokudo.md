@@ -3,6 +3,8 @@ title: もみいち食堂の唐揚げ定食 — 子連れにもやさしい食�
 date: '2026-10-25'
 category: その他
 summary: 山形のもみいち食堂。唐揚げ定食が評判で、未就学児はごはんと味噌汁が無料という良心的なサービスもあります。
+cover: gourmet/momoichi-shokudo.webp
+cover_alt: 唐揚げ定食を描いたアニメ調イラスト
 type: article
 source_url: https://www.threads.com/@y.nalu/post/DeyIP5qD71P
 ---

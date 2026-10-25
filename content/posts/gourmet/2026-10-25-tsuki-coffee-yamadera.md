@@ -3,6 +3,8 @@ title: 山寺「Tsuki Coffee 山寺南院」— サイフォンで淹れるス�
 date: '2026-10-25'
 category: カフェ
 summary: 山形市・山寺のコーヒー店。サイフォンで丁寧に抽出するスペシャルティコーヒーとスイーツのペアリングが紹介されています。
+cover: gourmet/tsuki-coffee-yamadera.webp
+cover_alt: サイフォンコーヒーを描いたアニメ調イラスト
 type: article
 source_url: https://www.instagram.com/reel/De1L6jHT5aK/
 ---

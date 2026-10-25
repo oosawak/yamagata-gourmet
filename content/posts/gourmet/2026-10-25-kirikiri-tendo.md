@@ -3,6 +3,8 @@ title: 天童の飯処「吉里吉里」— 大きなかき揚げの天丼
 date: '2026-10-25'
 category: その他
 summary: 天童市高擶の蕎麦処が「飯処」としてリニューアル。かき揚げ天丼と角煮、手作りプリンが評判です。
+cover: gourmet/kirikiri-tendo.webp
+cover_alt: 大きなかき揚げ天丼を描いたアニメ調イラスト
 type: article
 source_url: https://www.threads.com/@mii.yamagata25/post/DVlFtL8kqO7
 ---
