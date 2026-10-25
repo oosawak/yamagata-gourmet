@@ -22,6 +22,8 @@ DIST=ROOT/'dist'
 POSTS=CONTENT/'posts'
 IMAGES=CONTENT/'images'
 COLOR_THUMB=(720,450)
+CATEGORY_COVERS={'麺':'gourmet/ramen.webp','郷土料理':'gourmet/imoni.webp','甘いもの':'gourmet/fruit.webp','カフェ':'gourmet/cafe.webp'}
+DEFAULT_COVER='gourmet/hero-imoni.webp'
 MANUAL_I18N=json.loads((CONTENT/'i18n/en.json').read_text(encoding='utf-8'))
 TRANSLATION_CACHE=ROOT/'cache/translations/en.json'
 CACHED_I18N=json.loads(TRANSLATION_CACHE.read_text(encoding='utf-8')) if TRANSLATION_CACHE.is_file() else {'sites':{},'posts':{}}
@@ -116,7 +118,7 @@ def shell(default_site,root_prefix):
     return f'''<!DOCTYPE html>
 <html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f8f7f1"><meta name="description" content="架空の町・店舗・フルーツ通販を結ぶJSONサイトのデモです。">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.instagram.com https://www.threads.net https://www.threads.com; frame-src https://www.instagram.com https://www.threads.net https://www.threads.com; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>{escape(title)}</title><link rel="stylesheet" href="{root_prefix}assets/style.css"></head>
 <body><div id="app" data-default="{default_site}" data-root="{root_prefix}"><p class="loading">読み込み中…</p></div>
 <noscript>このサイトの表示にはJavaScriptが必要です。</noscript>
@@ -152,7 +154,7 @@ def shell():
     if portal_url and (not portal_url.startswith('https://') or '"' in portal_url or '<' in portal_url or '\n' in portal_url):
         raise ValueError('PORTAL_URL must be a safe HTTPS URL')
     attrs=f'data-default="{SITE_ID}" data-root="./" data-mode="site" data-site-id="{SITE_ID}" data-portal-url="{escape(portal_url,quote=True)}"'
-    return f"""<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Markdownから生成した静的JSONサイト"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>{escape(title)}</title><link rel="stylesheet" href="assets/style.css"></head><body><div id="app" {attrs}><p class="loading">読み込み中…</p></div><noscript>JavaScriptを有効にしてください。</noscript><script src="assets/app.js" defer></script></body></html>"""
+    return f"""<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Markdownから生成した静的JSONサイト"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.instagram.com https://www.threads.net https://www.threads.com; frame-src https://www.instagram.com https://www.threads.net https://www.threads.com; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><title>{escape(title)}</title><link rel="stylesheet" href="assets/style.css"></head><body><div id="app" {attrs}><p class="loading">読み込み中…</p></div><noscript>JavaScriptを有効にしてください。</noscript><script src="assets/app.js" defer></script></body></html>"""
 
 def generate():
     if DIST.exists():shutil.rmtree(DIST)
@@ -174,7 +176,15 @@ def generate():
         if not re.fullmatch(r'\d{4}-\d{2}-\d{2}-[a-z0-9_-]+\.md',postpath.name):
             raise ValueError(f'Invalid post filename: {postpath.name}')
         fm,body=parse_md(postpath)
-        required(fm,['title','date','category','summary','cover'],postpath)
+        required(fm,['title','date','category','summary'],postpath)
+        source_url=str(fm.get('source_url','')).strip()
+        embed_platform=''
+        if source_url.startswith('https://'):
+            if 'instagram.com' in source_url:embed_platform='instagram'
+            elif 'threads.net' in source_url or 'threads.com' in source_url:embed_platform='threads'
+        if not fm.get('cover') and not embed_platform:
+            raise ValueError(f'cover or a supported source_url is required: {postpath}')
+        cover_rel=fm.get('cover') or CATEGORY_COVERS.get(fm['category'],DEFAULT_COVER)
         slug=postpath.stem[11:]
         if slug in slugs:raise ValueError('Duplicate slug across dates: '+slug)
         slugs.add(slug)
@@ -195,16 +205,19 @@ def generate():
             'slug':slug,'type':item_type,'title':fm['title'],'date':str(fm['date']),
             'category':fm['category'],'summary':fm['summary'],
             'url':origin+f'#/post/{SITE_ID}/{slug}',
-            'cover':{'src':image_uri(fm['cover'],'thumb')[0],'alt':cover_alt,'mime':'image/webp'},
+            'cover':{'src':image_uri(cover_rel,'thumb')[0],'alt':cover_alt,'mime':'image/webp'},
             'i18n':{'en':english_summary},
         }
+        if embed_platform:
+            summary['embed_url']=source_url
+            summary['embed_platform']=embed_platform
         if item_type=='product':
             if SITE_ID!='fruit':raise ValueError('Products only supported in fruit demo')
             required(fm,['price_jpy','unit','stock'],postpath)
             price=int(fm['price_jpy'])
             if price<0:raise ValueError('Invalid price')
             summary.update({'price_jpy':price,'unit':fm['unit'],'stock':fm['stock']})
-        detail={**summary,'cover':{'src':image_uri(fm['cover'],'detail')[0], 'alt':cover_alt,'mime':'image/webp'},
+        detail={**summary,'cover':{'src':image_uri(cover_rel,'detail')[0], 'alt':cover_alt,'mime':'image/webp'},
                 'markdown':body,'html':sanitize_article_html(md(body)),'i18n':{'en':english_detail}}
         write_json(DIST/'data/posts'/SITE_ID/f'{slug}.json',detail)
         summaries.append(summary)

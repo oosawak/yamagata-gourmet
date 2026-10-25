@@ -67,3 +67,6 @@
 .brandicon-gourmet{color:#143c47}
 .brandicon-gourmet svg{width:54px}
 @media(max-width:650px){.brandicon{width:39px;height:39px}.brandicon svg{width:38px;height:38px}.brandicon-gourmet svg{width:42px}}
+
+.embed{display:flex;justify-content:center;margin:0 auto 24px;max-width:560px}
+.embed blockquote{width:100%}
