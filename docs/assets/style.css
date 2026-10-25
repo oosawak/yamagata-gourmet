@@ -70,3 +70,4 @@
 
 .embed{display:flex;justify-content:center;margin:0 auto 24px;max-width:560px}
 .embed blockquote{width:100%}
+.heronote{font-size:11px;color:#7a847b;margin-top:14px;max-width:680px;line-height:1.9}
