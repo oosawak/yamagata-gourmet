@@ -72,3 +72,11 @@
 .embed blockquote{width:100%}
 .heronote{font-size:11px;color:#7a847b;margin-top:14px;max-width:680px;line-height:1.9}
 .mapbox{margin-top:26px;border:1px solid var(--line);border-radius:13px;padding:18px;background:#fbfaf5}.mapbox h3{font-size:15px;margin-bottom:10px}.maplinks{display:flex;gap:10px;flex-wrap:wrap}.mapbox p{font-size:11px;color:var(--muted);margin:10px 0 0}
+
+/* Article page: left sidebar with site note + SNS embed (trial, 2026-10-26) */
+.article{grid-template-columns:350px minmax(0,1fr)}
+.leftnote{position:sticky;top:96px;border-top:2px solid var(--accent);padding-top:22px}
+.leftnote h3{font:600 21px Georgia,serif;margin-bottom:12px}
+.leftnote p{font-size:12px;color:var(--muted)}
+.leftnote .embed{margin:24px 0 0;max-width:100%}
+@media(max-width:950px){.article{grid-template-columns:1fr}.leftnote{position:static}}
