@@ -1,0 +1,602 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<link rel="icon" href="data:," />
+<title>1文字ADV試作</title>
+<style>
+  :root{
+    --bg:#101218;
+    --bg2:#171a23;
+    --panel:#1c202c;
+    --panel-line:#2e3347;
+    --ink:#ece8dc;
+    --ink-dim:#a9a698;
+    --ink-faint:#7c7a70;
+    --star:#eec25e;
+    --star-soft:#8a6d2f;
+    --warn:#e08a6d;
+    --good:#9ec49a;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(900px 480px at 50% -120px, #232842 0%, transparent 60%),
+      var(--bg);
+    color:var(--ink);
+    font-family:"Hiragino Mincho ProN","Hiragino Mincho Pro","Yu Mincho","YuMincho","Noto Serif JP",serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:680px;margin:0 auto;padding:28px 20px 48px;}
+
+  /* header */
+  .top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:6px;}
+  .top h1{font-size:20px;font-weight:700;letter-spacing:.06em;margin:0;}
+  .top h1 .star{color:var(--star);}
+  .proto{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:11px;letter-spacing:.14em;color:var(--ink-faint);
+    border:1px solid var(--panel-line);border-radius:999px;padding:4px 10px;white-space:nowrap;
+  }
+  .rule{height:1px;background:linear-gradient(90deg,transparent,var(--star-soft),transparent);margin:14px 0 22px;}
+
+  /* scene label */
+  .scene-label{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:12px;letter-spacing:.22em;color:var(--star);margin:0 0 12px;
+  }
+
+  /* story */
+  .story{font-size:18px;line-height:2.05;letter-spacing:.02em;min-height:180px;}
+  .story p{margin:0 0 1.1em;}
+  .story p:last-child{margin-bottom:0;}
+  @media (max-width:560px){ .story{font-size:17px;line-height:1.95;min-height:150px;} }
+
+  /* ending */
+  .ending-badge{
+    display:none;margin:0 0 18px;padding:18px 20px;text-align:center;
+    background:var(--bg2);border:1px solid var(--star-soft);border-radius:var(--radius);
+  }
+  .ending-badge .cap{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:11px;letter-spacing:.3em;color:var(--ink-dim);margin-bottom:6px;
+  }
+  .ending-badge .name{font-size:24px;font-weight:700;color:var(--star);letter-spacing:.08em;}
+  .ending-badge.show{display:block;}
+
+  /* action card */
+  .action{
+    margin-top:30px;background:var(--panel);border:1px solid var(--panel-line);
+    border-radius:var(--radius);padding:20px;
+  }
+  .action .cap{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:12px;color:var(--ink-dim);letter-spacing:.08em;margin:0 0 4px;
+  }
+  .action .cap b{color:var(--ink);font-weight:600;}
+  .action .hint{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:12px;color:var(--ink-faint);margin:0 0 14px;line-height:1.7;
+  }
+  .action-row{display:flex;gap:10px;}
+  .action input[type="text"]{
+    flex:1;min-width:0;background:var(--bg);border:1px solid var(--panel-line);border-radius:10px;
+    color:var(--ink);font-family:inherit;font-size:24px;font-weight:700;letter-spacing:.18em;
+    text-align:center;padding:12px 8px;outline:none;
+  }
+  .action input[type="text"]:focus{border-color:var(--star);}
+  .go{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    background:var(--star);color:#221a05;border:none;border-radius:10px;
+    font-size:15px;font-weight:700;letter-spacing:.04em;padding:12px 18px;cursor:pointer;white-space:nowrap;
+  }
+  .go:active{transform:translateY(1px);}
+  @media (max-width:560px){
+    .action-row{flex-direction:column;}
+    .go{width:100%;padding:14px;}
+  }
+
+  .feedback{
+    display:none;margin-top:14px;font-size:15px;line-height:1.8;
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    border-radius:10px;padding:12px 14px;
+  }
+  .feedback.show{display:block;}
+  .feedback.unknown{background:#262033;border:1px solid #453a5e;color:#d9cdf5;}
+  .feedback.warn{background:#2c2019;border:1px solid #5e4234;color:var(--warn);}
+  .feedback small{display:block;color:inherit;opacity:.75;font-size:12px;margin-top:2px;}
+
+  .again{
+    display:none;width:100%;margin-top:22px;
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    background:var(--star);color:#221a05;border:none;border-radius:10px;
+    font-size:16px;font-weight:700;padding:14px;cursor:pointer;
+  }
+  .again.show{display:block;}
+
+  /* trail */
+  .trail{
+    margin-top:22px;font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:12px;color:var(--ink-faint);line-height:1.9;word-break:break-all;
+  }
+  .trail .w{color:var(--ink-dim);}
+  .trail:empty{display:none;}
+
+  /* bottom controls */
+  .controls{
+    margin-top:30px;padding-top:18px;border-top:1px solid var(--panel-line);
+    display:flex;gap:10px;flex-wrap:wrap;
+  }
+  .controls button{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    background:transparent;color:var(--ink-dim);border:1px solid var(--panel-line);
+    border-radius:999px;font-size:13px;padding:9px 16px;cursor:pointer;
+  }
+  .controls button:active{color:var(--ink);border-color:var(--ink-faint);}
+
+  .md-panel{display:none;margin-top:16px;}
+  .md-panel.show{display:block;}
+  .md-panel .md-cap{
+    font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:12px;color:var(--ink-dim);margin:0 0 8px;line-height:1.8;
+  }
+  .md-panel pre{
+    margin:0;background:#0b0d12;border:1px solid var(--panel-line);border-radius:10px;
+    padding:16px;overflow-x:auto;
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-size:12.5px;line-height:1.75;color:#c9d1b8;white-space:pre-wrap;word-break:break-word;
+  }
+  .foot{
+    margin-top:26px;font-family:ui-sans-system,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    font-size:11px;color:var(--ink-faint);line-height:1.8;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <h1><span class="star">✦</span> 1文字ADV試作</h1>
+    <span class="proto">PROTOTYPE</span>
+  </div>
+  <div class="rule"></div>
+
+  <p class="scene-label" id="sceneLabel"></p>
+
+  <div class="ending-badge" id="endingBadge">
+    <div class="cap">ENDING</div>
+    <div class="name" id="endingName"></div>
+  </div>
+
+  <div class="story" id="story"></div>
+
+  <form class="action" id="actionForm" autocomplete="off">
+    <p class="cap">行動ボタン ― 元の言葉は <b id="baseWord"></b></p>
+    <p class="hint">言葉の中の好きな場所に、ちょうど1文字だけ足せます。消したり、置き換えたりはできません。そのまま押せば、元の言葉の行動になります。</p>
+    <div class="action-row">
+      <input type="text" id="wordInput" aria-label="行動の言葉" />
+      <button type="submit" class="go">この言葉で進む</button>
+    </div>
+    <div class="feedback" id="feedback" aria-live="polite"></div>
+  </form>
+
+  <button class="again" id="againBtn" type="button">もう一度遊ぶ</button>
+
+  <p class="trail" id="trail"></p>
+
+  <div class="controls">
+    <button type="button" id="mdToggle">この場面のMarkdownを見る</button>
+    <button type="button" id="restartBtn">最初からやり直す</button>
+  </div>
+
+  <div class="md-panel" id="mdPanel">
+    <p class="md-cap">この場面は、1枚のMarkdown文書として定義されています。frontmatter（---で囲まれた部分）にボタンの言葉・正解の言葉と行き先・編集しなかった場合の行き先を書き、本文をその下に書く――ページはそれを解釈して動いています。</p>
+    <pre id="mdView"></pre>
+  </div>
+
+  <p class="foot">試作（プロトタイプ）です。全8場面＋エンディング4種の小さな冒険で、場面定義をMarkdownで書く仕組みの検証を目的にしています。</p>
+
+</div>
+
+<script>
+/* ============================================================
+   場面定義：すべてMarkdown文書として書く。
+   frontmatter に id / label / button / answers / default_next /
+   unknown（エンディングは ending）を書き、本文はその下に置く。
+   ============================================================ */
+var SCENES_MD = [
+
+/* ---- タイトル ---- */
+"---\n" +
+"id: title\n" +
+"label: 扉の前\n" +
+"button: はじる\n" +
+"answers:\n" +
+"  - word: はじめる\n" +
+"    next: intro\n" +
+"  - word: ハジメル\n" +
+"    next: intro\n" +
+"  - word: はしる\n" +
+"    next: intro_run\n" +
+"  - word: ハシル\n" +
+"    next: intro_run\n" +
+"default_next: title_wait\n" +
+"unknown: その言葉では、扉はびくともしませんでした。\n" +
+"---\n" +
+"星祭りの前夜。村の真ん中に立つ星の木から、年に一度だけ実る「星の実」が盗まれました。\n\n" +
+"実がなければ、冬の夜空は暗いままです。あなたは村の小さな使い手。盗んだヨルガラスの巣がある、丘の上の塔まで行かなければなりません。\n\n" +
+"ところが物語の扉には、こう書かれています――「はじる」。\n\n" +
+"あと1文字あれば、きっと始まるはずです。",
+
+/* ---- タイトル（そのまま押した場合） ---- */
+"---\n" +
+"id: title_wait\n" +
+"label: 扉の前\n" +
+"button: はじる\n" +
+"answers:\n" +
+"  - word: はじめる\n" +
+"    next: intro\n" +
+"  - word: ハジメル\n" +
+"    next: intro\n" +
+"  - word: はしる\n" +
+"    next: intro_run\n" +
+"  - word: ハシル\n" +
+"    next: intro_run\n" +
+"default_next: title_wait\n" +
+"unknown: その言葉では、扉はびくともしませんでした。\n" +
+"---\n" +
+"まだ始まっていません。「はじる」のままでは、扉は開かないのです。\n\n" +
+"言葉のどこかに、1文字だけ足してみましょう。たとえば「はじめる」になるように。\n\n" +
+"急ぐなら、走って始める方法もあるかもしれません。",
+
+/* ---- 導入（通常） ---- */
+"---\n" +
+"id: intro\n" +
+"label: 第一章　朝の広場\n" +
+"button: さがす\n" +
+"answers:\n" +
+"  - word: さわがす\n" +
+"    next: river\n" +
+"  - word: サワガス\n" +
+"    next: river\n" +
+"default_next: forest\n" +
+"unknown: 広場では、それ以上の手がかりは見つかりませんでした。\n" +
+"---\n" +
+"朝霧の広場。星の木の下には、大きな羽根が一枚と、塔の方へ続く小さな足跡がありました。\n\n" +
+"村長は言いました。「騒ぐとヨルガラスに気づかれる。静かに頼むよ」\n\n" +
+"まずは手がかりを「さがす」ことから。ただし、静かにするかは――あなた次第です。",
+
+/* ---- 導入（走って開始） ---- */
+"---\n" +
+"id: intro_run\n" +
+"label: 第一章　走り出し\n" +
+"button: とまる\n" +
+"answers:\n" +
+"  - word: とどまる\n" +
+"    next: forest\n" +
+"  - word: トドマル\n" +
+"    next: forest\n" +
+"default_next: river\n" +
+"unknown: 足は止まりませんでした。そのまま走り抜けていきます。\n" +
+"---\n" +
+"走って始めてしまいました！\n\n" +
+"広場を横切り、羽根を拾う間もなく、あなたは森の入口を駆け抜けます。息は上がりますが、川の音はもうすぐそこです。\n\n" +
+"このまま川へ出るか、一度「とまる」か。少し長く留まれば、森で何か見つかるかもしれません。",
+
+/* ---- 森 ---- */
+"---\n" +
+"id: forest\n" +
+"label: 第二章　星屑の森\n" +
+"button: みる\n" +
+"answers:\n" +
+"  - word: みせる\n" +
+"    next: guard\n" +
+"  - word: ミセル\n" +
+"    next: guard\n" +
+"default_next: river\n" +
+"unknown: 見渡しても、同じ木ばかりが並んでいました。\n" +
+"---\n" +
+"森は薄暗く、星の実の甘い香りがかすかに漂います。枝の間からは、川の光が見え隠れしていました。\n\n" +
+"足元には、森の小人たちの小さな家。あなたが広場で拾った羽根は、小人たちが大切にする「空の印」とそっくりです。\n\n" +
+"あたりを「みる」だけにするか、大事なものを誰かに「みせる」か。",
+
+/* ---- 川 ---- */
+"---\n" +
+"id: river\n" +
+"label: 第三章　月影川\n" +
+"button: わたる\n" +
+"answers:\n" +
+"  - word: わたせる\n" +
+"    next: climax\n" +
+"  - word: ワタセル\n" +
+"    next: climax\n" +
+"default_next: guard\n" +
+"unknown: 川は深く、その言葉では渡れませんでした。\n" +
+"---\n" +
+"目の前に、月影川が広がります。古い丸太橋は途中で折れていて、そのまま「わたる」のは危なそうです。\n\n" +
+"対岸には塔の見張り小屋。こちら岸には、流木と長いロープと、小さな荷カゴが残されていました。\n\n" +
+"自分が渡るか、何かを向こうへ「わたせる」ようにするか。工夫次第で、見張りの前を通らずに済むかもしれません。",
+
+/* ---- 見張り ---- */
+"---\n" +
+"id: guard\n" +
+"label: 第四章　見張り小屋\n" +
+"button: かくれる\n" +
+"answers:\n" +
+"  - word: かくされる\n" +
+"    next: climax_inside\n" +
+"  - word: カクサレル\n" +
+"    next: climax_inside\n" +
+"default_next: climax\n" +
+"unknown: 見張りの番犬マロが、こちらをじっと見ています。\n" +
+"---\n" +
+"塔のふもとの見張り小屋。番犬のマロが、大きな耳をぴんと立てて巡回しています。\n\n" +
+"そばには、塔へ食料を運ぶ荷車と、大きな葉の山。やり過ごすには「かくれる」のが一番です。\n\n" +
+"自分で隠れるか、何かにすっかり隠されてしまうかで、たどり着く場所が変わりそうです。",
+
+/* ---- クライマックス（塔の外） ---- */
+"---\n" +
+"id: climax\n" +
+"label: 最終章　塔の上\n" +
+"button: きる\n" +
+"answers:\n" +
+"  - word: きれる\n" +
+"    next: ending_bold\n" +
+"  - word: キレる\n" +
+"    next: ending_bold\n" +
+"  - word: おきる\n" +
+"    next: ending_gentle\n" +
+"  - word: オキル\n" +
+"    next: ending_gentle\n" +
+"  - word: あきる\n" +
+"    next: ending_secret\n" +
+"default_next: ending_normal\n" +
+"unknown: ロープは太く、その言葉では何も起きませんでした。\n" +
+"---\n" +
+"塔の上。星の実は、太いロープで吊るされたカゴの中で、弱く光っています。\n\n" +
+"ヨルガラスは巣でうたた寝中。起こさないように――とはいえ、起こしてしまったら、それはそれで何かが起きるかもしれません。\n\n" +
+"あなたの手には、村長から預かった紙の鍵。よく見ると、小さな刃になっています。ロープを「きる」時が来ました。どう切るかは、言葉次第です。",
+
+/* ---- クライマックス（塔の中） ---- */
+"---\n" +
+"id: climax_inside\n" +
+"label: 最終章　塔の中\n" +
+"button: きる\n" +
+"answers:\n" +
+"  - word: きれる\n" +
+"    next: ending_bold\n" +
+"  - word: キレる\n" +
+"    next: ending_bold\n" +
+"  - word: おきる\n" +
+"    next: ending_gentle\n" +
+"  - word: オキル\n" +
+"    next: ending_gentle\n" +
+"  - word: あきる\n" +
+"    next: ending_secret\n" +
+"default_next: ending_normal\n" +
+"unknown: ロープは太く、その言葉では何も起きませんでした。\n" +
+"---\n" +
+"荷車の葉に隠されて、あなたは塔の中まで運ばれてしまいました。\n\n" +
+"目の前には、ロープで吊るされたカゴと、その中の星の実。ヨルガラスは外の巣でうたた寝中です。\n\n" +
+"手には紙の鍵の小さな刃。ロープを「きる」時が来ました。どう切るかは、言葉次第です。",
+
+/* ---- エンディング ---- */
+"---\n" +
+"id: ending_gentle\n" +
+"label: エンディング\n" +
+"ending: 星の目覚め\n" +
+"---\n" +
+"「おきる」――その言葉で目覚めたのは、ヨルガラスではなく、星の木の精でした。\n\n" +
+"遠く離れた村の木から、風に乗って光の粉が届き、カゴの結び目はひとりでにほどけていきます。星の実はふわりと浮かび、あなたの手の中へ。\n\n" +
+"誰も怒らせず、誰も起こさず（精は別ですが）、実は戻ってきました。その夜、村の空には一番星が灯りました。",
+
+"---\n" +
+"id: ending_bold\n" +
+"label: エンディング\n" +
+"ending: キレた糸、走る光\n" +
+"---\n" +
+"「キレる」！　あなたがそう叫ぶと同時に刃を振ると、ロープは派手に切れ、カゴが落ち、ヨルガラスは飛び起きました。\n\n" +
+"大追跡の始まりです。塔を駆け下り、川を跳び越え、森をすり抜けて――星の実を抱えたあなたは、村まで一直線に逃げ切りました。\n\n" +
+"ヨルガラスは悔しそうに鳴きましたが、村の灯りを見て引き返していきました。派手でしたが、実は無事です。",
+
+"---\n" +
+"id: ending_normal\n" +
+"label: エンディング\n" +
+"ending: 静かな奪還\n" +
+"---\n" +
+"あなたは静かにロープを「きる」と、カゴをそっと下ろして星の実を取り戻しました。\n\n" +
+"ヨルガラスは最後までうたた寝したまま。あなたは来た道を静かに戻り、日が暮れる前に村へ帰り着きました。\n\n" +
+"その夜、星祭りは無事に開かれました。派手さはないけれど、これが一番確実なやり方だったのかもしれません。",
+
+"---\n" +
+"id: ending_secret\n" +
+"label: エンディング\n" +
+"ending: あきらめた見張り\n" +
+"---\n" +
+"待てど暮らせど何も起きず、見張りのマロも、巣のヨルガラスも、すっかり「あきる」頃合いになりました。\n\n" +
+"ヨルガラスは「光るものは他にもある」と言わんばかりに飛び去り、マロは小屋で昼寝を始めます。あなたはその隙に、ゆっくりロープをほどいて星の実を持ち帰りました。\n\n" +
+"忍耐の勝利です。村では「待つことも冒険のうち」と語り継がれることになりました。"
+
+];
+
+/* ============================================================
+   Markdown（frontmatter）の簡易パーサ
+   ============================================================ */
+function parseScene(md){
+  var scene = { answers: [] };
+  var m = md.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if(!m){ scene.body = md; return scene; }
+  var fm = m[1]; scene.body = m[2].replace(/^\n+/, "");
+  scene.raw = md;
+  var lines = fm.split("\n");
+  var inAnswers = false, cur = null;
+  for(var i = 0; i < lines.length; i++){
+    var line = lines[i];
+    var top = line.match(/^([a-z_]+):\s*(.*)$/);
+    if(top && line.charAt(0) !== " " && line.charAt(0) !== "-"){
+      inAnswers = (top[1] === "answers");
+      if(!inAnswers) scene[top[1]] = top[2].trim();
+      cur = null;
+      continue;
+    }
+    if(inAnswers){
+      var w = line.match(/^\s*-\s*word:\s*(.*)$/);
+      if(w){ cur = { word: w[1].trim() }; scene.answers.push(cur); continue; }
+      var n = line.match(/^\s*next:\s*(.*)$/);
+      if(n && cur) cur.next = n[1].trim();
+    }
+  }
+  return scene;
+}
+
+var SCENES = {};
+SCENES_MD.forEach(function(md){
+  var s = parseScene(md);
+  if(s.id) SCENES[s.id] = s;
+});
+
+/* ============================================================
+   判定ユーティリティ
+   ============================================================ */
+/* カタカナ→ひらがなに寄せて表記ゆれを吸収する */
+function normalize(s){
+  return (s || "").trim().replace(/[ァ-ヶ]/g, function(c){
+    return String.fromCharCode(c.charCodeAt(0) - 0x60);
+  });
+}
+/* result が original に「ちょうど1文字挿入」した形かどうか */
+function isOneInsertion(original, result){
+  var a = Array.from(original), b = Array.from(result);
+  if(b.length !== a.length + 1) return false;
+  var i = 0, j = 0, skipped = false;
+  while(i < a.length && j < b.length){
+    if(a[i] === b[j]){ i++; j++; }
+    else{
+      if(skipped) return false;
+      skipped = true; j++;
+    }
+  }
+  return true;
+}
+function escapeHtml(s){
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+function renderBody(body){
+  return body.split(/\n\n+/).map(function(p){
+    return "<p>" + escapeHtml(p).replace(/\n/g, "<br>") + "</p>";
+  }).join("");
+}
+
+/* ============================================================
+   画面制御
+   ============================================================ */
+var storyEl = document.getElementById("story");
+var labelEl = document.getElementById("sceneLabel");
+var formEl = document.getElementById("actionForm");
+var inputEl = document.getElementById("wordInput");
+var baseEl = document.getElementById("baseWord");
+var feedbackEl = document.getElementById("feedback");
+var badgeEl = document.getElementById("endingBadge");
+var endingNameEl = document.getElementById("endingName");
+var againBtn = document.getElementById("againBtn");
+var mdPanel = document.getElementById("mdPanel");
+var mdView = document.getElementById("mdView");
+var mdToggle = document.getElementById("mdToggle");
+var trailEl = document.getElementById("trail");
+
+var current = null;
+var trail = [];
+
+function showFeedback(kind, main, sub){
+  feedbackEl.className = "feedback show " + kind;
+  feedbackEl.innerHTML = escapeHtml(main) + (sub ? "<small>" + escapeHtml(sub) + "</small>" : "");
+}
+function hideFeedback(){
+  feedbackEl.className = "feedback";
+  feedbackEl.innerHTML = "";
+}
+function renderTrail(){
+  if(!trail.length){ trailEl.textContent = ""; return; }
+  trailEl.innerHTML = "たどった言葉： " + trail.map(function(w){
+    return "<span class='w'>「" + escapeHtml(w) + "」</span>";
+  }).join(" → ");
+}
+
+function goTo(id){
+  var scene = SCENES[id];
+  if(!scene) return;
+  current = scene;
+  hideFeedback();
+  labelEl.textContent = scene.label || "";
+  storyEl.innerHTML = renderBody(scene.body || "");
+  mdView.textContent = scene.raw || "";
+  if(scene.ending){
+    badgeEl.classList.add("show");
+    endingNameEl.textContent = scene.ending;
+    formEl.style.display = "none";
+    againBtn.classList.add("show");
+  }else{
+    badgeEl.classList.remove("show");
+    formEl.style.display = "";
+    againBtn.classList.remove("show");
+    baseEl.textContent = "「" + (scene.button || "") + "」";
+    inputEl.value = scene.button || "";
+    setTimeout(function(){ inputEl.focus(); inputEl.setSelectionRange(inputEl.value.length, inputEl.value.length); }, 30);
+  }
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function restart(){
+  trail = [];
+  renderTrail();
+  goTo("title");
+}
+
+formEl.addEventListener("submit", function(ev){
+  ev.preventDefault();
+  if(!current || current.ending) return;
+  var base = current.button || "";
+  var input = inputEl.value.trim();
+  var nBase = normalize(base), nInput = normalize(input);
+
+  /* 編集なし → default_next */
+  if(nInput === nBase){
+    trail.push(input || base);
+    renderTrail();
+    goTo(current.default_next);
+    return;
+  }
+  /* answers 照合（表記ゆれを吸収。はしる のような特例もここで拾う） */
+  for(var i = 0; i < current.answers.length; i++){
+    if(normalize(current.answers[i].word) === nInput){
+      trail.push(input);
+      renderTrail();
+      goTo(current.answers[i].next);
+      return;
+    }
+  }
+  /* 1文字挿入だが answers に無い → unknown を出して留まる */
+  if(isOneInsertion(nBase, nInput)){
+    showFeedback("unknown", current.unknown || "その言葉では何も起きませんでした。", "別の1文字を足してみましょう。この場面に留まります。");
+    return;
+  }
+  /* それ以外の編集 → 注意 */
+  showFeedback("warn", "1文字を足すだけです。", "文字を消したり、置き換えたりはできません。元の言葉「" + base + "」に、1文字だけ挿入してください。");
+});
+
+againBtn.addEventListener("click", restart);
+document.getElementById("restartBtn").addEventListener("click", restart);
+mdToggle.addEventListener("click", function(){
+  var open = mdPanel.classList.toggle("show");
+  mdToggle.textContent = open ? "この場面のMarkdownを閉じる" : "この場面のMarkdownを見る";
+});
+
+restart();
+</script>
+</body>
+</html>
