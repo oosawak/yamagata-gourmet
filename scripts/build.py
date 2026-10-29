@@ -202,7 +202,7 @@ def generate():
         cover_alt=fm.get('cover_alt',fm['title'])
         summary={
             'id':key,'site_id':SITE_ID,'site_name':site['name'],'site_kind':site['kind'],
-            'slug':slug,'type':item_type,'title':fm['title'],'subtitle':fm.get('subtitle',''),'date':str(fm['date']),
+            'slug':slug,'type':item_type,'title':fm['title'],'subtitle':fm.get('subtitle',''),'author':fm.get('author',''),'date':str(fm['date']),
             'category':fm['category'],'summary':fm['summary'],
             'url':origin+f'#/post/{SITE_ID}/{slug}',
             'cover':{'src':image_uri(cover_rel,'thumb')[0],'alt':cover_alt,'mime':'image/webp'},
