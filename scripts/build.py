@@ -234,6 +234,12 @@ def generate():
     write_json(DIST/'data/portal.json',portal)
     write_json(DIST/'data/portal-local.json',portal)
     (DIST/'index.html').write_text(shell(),encoding='utf-8')
+    en_site=site.get('i18n',{}).get('en',{})
+    en_name=str(en_site.get('name') or site['name'])
+    en_desc=str(en_site.get('description') or site['description']).replace('\n',' ')
+    en_page=f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{escape(en_desc,quote=True)}"><meta http-equiv="refresh" content="0; url=../#/en/"><title>{escape(en_name)}</title></head><body><p><a href="../#/en/">{escape(en_name)} &mdash; English</a></p></body></html>"""
+    (DIST/'en').mkdir(parents=True,exist_ok=True)
+    (DIST/'en'/'index.html').write_text(en_page,encoding='utf-8')
     print(f'Built independent {SITE_ID}: {len(summaries)} items at {origin}')
 
 if __name__=='__main__':generate()
