@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Tantanmen at Nanyo's \"Menya Aoi\"",
+      "category": "Noodles",
+      "summary": "A popular restaurant in Nanyo City, Yamagata Prefecture, known for a tantanmen that keeps customers coming back.",
+      "cover_alt": "Watercolor-style illustration of tantanmen",
+      "html": "<p>&quot;Menya Aoi&quot; in Nanyo City, Yamagata Prefecture, is a popular spot for tantanmen.</p>\n<p>According to an Instagram post (@odekake.spot.tohoku), the restaurant has many regulars and is described as serving &quot;one-of-a-kind tantanmen.&quot; A place worth considering when looking for ramen in Nanyo.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Menya Aoi</li>\n<li>Location: Nanyo City, Yamagata Prefecture (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Tantanmen</li>\n<li>Note: Parking available</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reels (@odekake.spot.tohoku): https://www.instagram.com/reel/DPyFjqLEwU9/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "\"Menya Aoi\" in Nanyo City, Yamagata Prefecture, is a popular spot for tantanmen.\n\nAccording to an Instagram post (@odekake.spot.tohoku), the restaurant has many regulars and is described as serving \"one-of-a-kind tantanmen.\" A place worth considering when looking for ramen in Nanyo.\n\n## Shop Information (from the post)\n\n- Shop Name: Menya Aoi\n- Location: Nanyo City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Tantanmen\n- Note: Parking available\n\n## Source\n\n- Instagram Reels (@odekake.spot.tohoku): https://www.instagram.com/reel/DPyFjqLEwU9/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n"
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DPyFjqLEwU9/",
   "embed_platform": "instagram",

@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamadera \"Tsuki Coffee Yamadera Nan-in\" — Siphon-Brewed Specialty Coffee",
+      "category": "Cafés",
+      "summary": "A coffee shop in Yamadera, Yamagata City, offering specialty coffee carefully brewed with a siphon, paired with sweets.",
+      "cover_alt": "Watercolor-style illustration of siphon coffee",
+      "html": "<p>&quot;Tsuki Coffee Yamadera Nan-in&quot; in Yamadera, Yamagata City, is a spot where you can enjoy specialty coffee.</p>\n<p>According to an Instagram post (Yamadera Tourism Association), the coffee is carefully brewed using a siphon. They also offer pairings of sweets and coffee, making it a great spot for a cafe break while exploring Yamadera.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Tsuki Coffee Yamadera Nan-in</li>\n<li>Location: Yamadera, Yamagata City, Yamagata Prefecture (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Siphon-brewed specialty coffee, pairings with sweets</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/De1L6jHT5aK/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "\"Tsuki Coffee Yamadera Nan-in\" in Yamadera, Yamagata City, is a spot where you can enjoy specialty coffee.\n\nAccording to an Instagram post (Yamadera Tourism Association), the coffee is carefully brewed using a siphon. They also offer pairings of sweets and coffee, making it a great spot for a cafe break while exploring Yamadera.\n\n## Shop Information (from the post)\n\n- Shop Name: Tsuki Coffee Yamadera Nan-in\n- Location: Yamadera, Yamagata City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Siphon-brewed specialty coffee, pairings with sweets\n\n## Source\n\n- Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/De1L6jHT5aK/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n"
+    }
   },
   "embed_url": "https://www.instagram.com/reel/De1L6jHT5aK/",
   "embed_platform": "instagram",

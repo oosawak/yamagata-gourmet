@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamadera \"Shoseido\" — Yamadera Manju and Morokoshi",
+      "category": "Sweets",
+      "summary": "\"Shoseido\" in Yamadera. Its specialties are souvenirs such as Yamadera manju and morokoshi, plus a refreshing kuzu ice.",
+      "cover_alt": "Watercolor-style illustration of Yamadera manju and corn",
+      "html": "<p>This is &quot;Shoseido&quot; in Yamagata City's Yamadera.</p>\n<p>Instagram posts (@yamadera_tourism_association) feature &quot;Yamadera manju,&quot; a recommended souvenir from Yamadera, and the long-loved &quot;morokoshi.&quot; They also mention &quot;kuzu ice,&quot; best enjoyed chilled — perfect for a break while strolling through Yamadera.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Shoseido</li>\n<li>Location: Yamadera (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Yamadera manju, morokoshi, kuzu ice</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/Deq4wGmhRCY/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Shoseido\" in Yamagata City's Yamadera.\n\nInstagram posts (@yamadera_tourism_association) feature \"Yamadera manju,\" a recommended souvenir from Yamadera, and the long-loved \"morokoshi.\" They also mention \"kuzu ice,\" best enjoyed chilled — perfect for a break while strolling through Yamadera.\n\n## Shop Information (from the post)\n\n- Shop Name: Shoseido\n- Location: Yamadera (the exact address was not specified in the post — please check)\n- Specialties: Yamadera manju, morokoshi, kuzu ice\n\n## Source\n\n- Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/Deq4wGmhRCY/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n"
+    }
   },
   "embed_url": "https://www.instagram.com/reel/Deq4wGmhRCY/",
   "embed_platform": "instagram",

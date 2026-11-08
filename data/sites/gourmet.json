@@ -345,7 +345,12 @@
         "mime": "image/webp"
       },
       "i18n": {
-        "en": {}
+        "en": {
+          "title": "Yamadera \"Shoseido\" — Yamadera Manju and Morokoshi",
+          "category": "Sweets",
+          "summary": "\"Shoseido\" in Yamadera. Its specialties are souvenirs such as Yamadera manju and morokoshi, plus a refreshing kuzu ice.",
+          "cover_alt": "Watercolor-style illustration of Yamadera manju and corn"
+        }
       },
       "embed_url": "https://www.instagram.com/reel/Deq4wGmhRCY/",
       "embed_platform": "instagram",
@@ -553,7 +558,12 @@
         "mime": "image/webp"
       },
       "i18n": {
-        "en": {}
+        "en": {
+          "title": "Yamadera \"Tsuki Coffee Yamadera Nan-in\" — Siphon-Brewed Specialty Coffee",
+          "category": "Cafés",
+          "summary": "A coffee shop in Yamadera, Yamagata City, offering specialty coffee carefully brewed with a siphon, paired with sweets.",
+          "cover_alt": "Watercolor-style illustration of siphon coffee"
+        }
       },
       "embed_url": "https://www.instagram.com/reel/De1L6jHT5aK/",
       "embed_platform": "instagram",
@@ -683,7 +693,12 @@
         "mime": "image/webp"
       },
       "i18n": {
-        "en": {}
+        "en": {
+          "title": "Higashine \"Sato Nishiki\" Imoni Lunch — Imoni, Onigiri, and Homemade Side Dishes",
+          "category": "Regional cuisine",
+          "summary": "An imoni lunch offered by Sato Nishiki in Higashine City. The set comes with imoni, onigiri, and homemade side dishes, and there are cherry sweets as well.",
+          "cover_alt": "Watercolor-style illustration of an imoni lunch"
+        }
       },
       "embed_url": "https://www.threads.com/@yu.satonishiki/post/Dc8aZ2lGlSA",
       "embed_platform": "threads",
@@ -787,7 +802,12 @@
         "mime": "image/webp"
       },
       "i18n": {
-        "en": {}
+        "en": {
+          "title": "Tantanmen at Nanyo's \"Menya Aoi\"",
+          "category": "Noodles",
+          "summary": "A popular restaurant in Nanyo City, Yamagata Prefecture, known for a tantanmen that keeps customers coming back.",
+          "cover_alt": "Watercolor-style illustration of tantanmen"
+        }
       },
       "embed_url": "https://www.instagram.com/reel/DPyFjqLEwU9/",
       "embed_platform": "instagram",
@@ -813,7 +833,12 @@
         "mime": "image/webp"
       },
       "i18n": {
-        "en": {}
+        "en": {
+          "title": "Tendo's Eatery \"Kirikiri\" — Tendon with Large Kakiage",
+          "category": "Other",
+          "summary": "A soba restaurant in Takadama, Tendo City, reopened as an eatery. Its kakiage tendon, braised pork belly, and homemade pudding are highly acclaimed.",
+          "cover_alt": "A watercolor-style illustration of a large kakiage tendon"
+        }
       },
       "embed_url": "https://www.threads.com/@mii.yamagata25/post/DVlFtL8kqO7",
       "embed_platform": "threads",
