@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamadera \"Mitoya\" — Handmade Soba with Dewakaori, and Dashi Soba",
+      "category": "Noodles",
+      "summary": "\"Mitoya\" in Yamadera. Handmade nihachi soba using Yamagata-grown \"Dewakaori\" buckwheat, and \"dashi soba\" topped with the local dish \"dashi,\" are introduced.",
+      "cover_alt": "Watercolor-style illustration of handmade soba and dashi soba",
+      "html": "<p>This is &quot;Mitoya&quot; in Yamadera.</p>\n<p>An Instagram post (@yamadera_tourism_association) introduces its carefully made handmade nihachi soba, using &quot;Dewakaori&quot; grown in Yamagata Prefecture. The &quot;dashi soba,&quot; topped with Yamagata's local dish &quot;dashi,&quot; is also recommended, and can be enjoyed along with the riverside scenery.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Mitoya</li>\n<li>Location: Yamadera (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Handmade nihachi soba (Dewakaori), dashi soba</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DetdhMYBYkj/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Mitoya\" in Yamadera.\n\nAn Instagram post (@yamadera_tourism_association) introduces its carefully made handmade nihachi soba, using \"Dewakaori\" grown in Yamagata Prefecture. The \"dashi soba,\" topped with Yamagata's local dish \"dashi,\" is also recommended, and can be enjoyed along with the riverside scenery.\n\n## Shop Information (from the post)\n\n- Shop Name: Mitoya\n- Location: Yamadera (the exact address was not specified in the post — please check)\n- Specialties: Handmade nihachi soba (Dewakaori), dashi soba\n\n## Source\n\n- Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DetdhMYBYkj/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DetdhMYBYkj/",
   "embed_platform": "instagram",

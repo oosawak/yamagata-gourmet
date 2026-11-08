@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Tsukumodori Bento — Yamagata City's Signature, a Taste of Memories",
+      "category": "Regional cuisine",
+      "summary": "The \"Tsukumodori Bento,\" a bento representing Yamagata City since long ago. A companion for train journeys, and a taste that stays in local people's memories.",
+      "cover_alt": "Watercolor-style illustration of the Tsukumodori Bento",
+      "html": "<p>The &quot;Tsukumodori Bento&quot; is a bento that has represented Yamagata City since long ago.</p>\n<p>According to a Threads post, it is a taste of memories: as a child, buying one and boarding the train, they could hardly wait for lunch. Called &quot;the most delicious bento in the world, to me,&quot; it is a dish loved by locals.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Item: Tsukumodori Bento</li>\n<li>Location: Yamagata City</li>\n<li>Note: A local standard, also used as bento for meetings</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@dai.takahashi.92): https://www.threads.com/@dai.takahashi.92/post/DeLkCtJE4iy</li>\n</ul>\n",
+      "markdown": "The \"Tsukumodori Bento\" is a bento that has represented Yamagata City since long ago.\n\nAccording to a Threads post, it is a taste of memories: as a child, buying one and boarding the train, they could hardly wait for lunch. Called \"the most delicious bento in the world, to me,\" it is a dish loved by locals.\n\n## Shop Information (from the post)\n\n- Item: Tsukumodori Bento\n- Location: Yamagata City\n- Note: A local standard, also used as bento for meetings\n\n## Source\n\n- Threads post (@dai.takahashi.92): https://www.threads.com/@dai.takahashi.92/post/DeLkCtJE4iy"
+    }
   },
   "embed_url": "https://www.threads.com/@dai.takahashi.92/post/DeLkCtJE4iy",
   "embed_platform": "threads",

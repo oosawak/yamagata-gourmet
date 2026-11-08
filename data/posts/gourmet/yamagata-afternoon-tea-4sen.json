@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Four Afternoon Tea Picks in Yamagata Prefecture",
+      "category": "Cafés",
+      "summary": "Four afternoon tea spots in Yamagata Prefecture. Four shops in Higashine, Yamagata, and Yonezawa are introduced.",
+      "cover_alt": "Watercolor-style illustration of afternoon tea",
+      "html": "<p>Here are four afternoon tea spots in Yamagata Prefecture.</p>\n<p>An Instagram post (@odekake.spot.tohoku) introduces the following four shops as popular Yamagata afternoon tea spots, where you can luxuriously taste local seasonal fruits and sweets. Each shop has a carefully made space where you can enjoy a relaxed tea time, they say.</p>\n<h2>The Four Featured Shops (from the post)</h2>\n<ol>\n<li>Cafe Belle Tree (Higashine City)</li>\n<li>Kineya Karyo (Yamagata City)</li>\n<li>La Gare, Hotel Metropolitan Yamagata (Yamagata City)</li>\n<li>Yottette Caffe (Yonezawa City)</li>\n</ol>\n<p>Detailed addresses, prices, and reservation methods for each shop were not specified in the post — please check.</p>\n<h2>Source</h2>\n<ul>\n<li>Instagram post (@odekake.spot.tohoku): https://www.instagram.com/p/DQB2a7FE73c/</li>\n<li>Business hours, closing days, prices, and other details may change. Please check with each shop for the latest information.</li>\n</ul>\n",
+      "markdown": "Here are four afternoon tea spots in Yamagata Prefecture.\n\nAn Instagram post (@odekake.spot.tohoku) introduces the following four shops as popular Yamagata afternoon tea spots, where you can luxuriously taste local seasonal fruits and sweets. Each shop has a carefully made space where you can enjoy a relaxed tea time, they say.\n\n## The Four Featured Shops (from the post)\n\n1. Cafe Belle Tree (Higashine City)\n2. Kineya Karyo (Yamagata City)\n3. La Gare, Hotel Metropolitan Yamagata (Yamagata City)\n4. Yottette Caffe (Yonezawa City)\n\nDetailed addresses, prices, and reservation methods for each shop were not specified in the post — please check.\n\n## Source\n\n- Instagram post (@odekake.spot.tohoku): https://www.instagram.com/p/DQB2a7FE73c/\n- Business hours, closing days, prices, and other details may change. Please check with each shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/p/DQB2a7FE73c/",
   "embed_platform": "instagram",

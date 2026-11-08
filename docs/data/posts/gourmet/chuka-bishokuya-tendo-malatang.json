@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Tendo \"Chuka Bishokuya Tendo Branch\" — Malatang, With Broth and Without",
+      "category": "Other",
+      "summary": "A Chinese restaurant in Tendo City has newly started serving malatang: a soupy malatang and a dry malaban are introduced.",
+      "cover_alt": "Watercolor-style illustration of malatang",
+      "html": "<p>At &quot;Chuka Bishokuya Tendo Branch&quot; in Tendo City, a new menu item, malatang, has been introduced.</p>\n<p>According to an Instagram post (@odekake.spot.tohoku, marked as PR), there are two kinds: a soupy &quot;Pork Malatang&quot; and a dry &quot;Beef Malaban.&quot; At lunch, there is also a service where counter dishes such as salad, karaage, and almond jelly are free with orders of 800 yen (tax included) or more per person (please check with the shop for details and conditions).</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Chuka Bishokuya Tendo Branch</li>\n<li>Location: 山形県天童市糠塚1-6-26</li>\n<li>Specialties: Malatang (malatang with broth / dry malaban)</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reel (@odekake.spot.tohoku): https://www.instagram.com/reel/DeRNV-oT2SA/</li>\n<li>Business hours, services, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "At \"Chuka Bishokuya Tendo Branch\" in Tendo City, a new menu item, malatang, has been introduced.\n\nAccording to an Instagram post (@odekake.spot.tohoku, marked as PR), there are two kinds: a soupy \"Pork Malatang\" and a dry \"Beef Malaban.\" At lunch, there is also a service where counter dishes such as salad, karaage, and almond jelly are free with orders of 800 yen (tax included) or more per person (please check with the shop for details and conditions).\n\n## Shop Information (from the post)\n\n- Shop Name: Chuka Bishokuya Tendo Branch\n- Location: 山形県天童市糠塚1-6-26\n- Specialties: Malatang (malatang with broth / dry malaban)\n\n## Source\n\n- Instagram Reel (@odekake.spot.tohoku): https://www.instagram.com/reel/DeRNV-oT2SA/\n- Business hours, services, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DeRNV-oT2SA/",
   "embed_platform": "instagram",

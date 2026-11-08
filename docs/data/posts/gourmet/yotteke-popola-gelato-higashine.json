@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Gelato at Higashine's \"Yotteke Popola\" — Gelato Made with Honbo Honey",
+      "category": "Sweets",
+      "summary": "A gelato shop inside Yotteke Popola in Higashine City. The start of sales of a gelato made with Honbo honey is introduced.",
+      "cover_alt": "Watercolor-style illustration of honey gelato",
+      "html": "<p>This is a gelato shop inside Yotteke Popola in Higashine City.</p>\n<p>A Threads post (@honbouganji) introduces the start of sales of a gelato made with Honbo honey. The staff developed it through trial and error, and the poster says it was &quot;very delicious.&quot;</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Location: Yotteke Popola (Higashine City)</li>\n<li>Shop Name: Not specified in the post — please check (a gelato shop inside Yotteke Popola)</li>\n<li>Specialties: Gelato made with Honbo honey</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@honbouganji): https://www.threads.com/@honbouganji/post/DfBaoGgoPY9</li>\n<li>Business hours, sales periods, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is a gelato shop inside Yotteke Popola in Higashine City.\n\nA Threads post (@honbouganji) introduces the start of sales of a gelato made with Honbo honey. The staff developed it through trial and error, and the poster says it was \"very delicious.\"\n\n## Shop Information (from the post)\n\n- Location: Yotteke Popola (Higashine City)\n- Shop Name: Not specified in the post — please check (a gelato shop inside Yotteke Popola)\n- Specialties: Gelato made with Honbo honey\n\n## Source\n\n- Threads post (@honbouganji): https://www.threads.com/@honbouganji/post/DfBaoGgoPY9\n- Business hours, sales periods, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.threads.com/@honbouganji/post/DfBaoGgoPY9",
   "embed_platform": "threads",

@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "\"Tonkatsu Chinbuta\" in Johoku-cho, Yamagata City — Thick-Cut, Tender Tonkatsu",
+      "category": "Other",
+      "summary": "\"Chinbuta,\" a tonkatsu shop in Johoku-cho, Yamagata City. Visitors' posts praise it as thick and full of volume, yet tender.",
+      "cover_alt": "Watercolor-style illustration of a thick-cut tonkatsu set meal",
+      "html": "<p>This is &quot;Chinbuta,&quot; a tonkatsu shop in Johoku-cho, Yamagata City.</p>\n<p>The original post shows a visit with a family member who had started a job in Yamagata. &quot;As thick as rumored, full of volume, and tender&quot; — the satisfaction of the thick-cut tonkatsu comes through.</p>\n<p>For the shop's location, phone number, and business hours, please check Google Maps from &quot;Shop Location&quot; at the bottom of this article.</p>\n<p>Source: <a href=\"https://www.threads.com/@moriw650/post/DX6WTO7EzzJ\">Threads post</a></p>\n",
+      "markdown": "This is \"Chinbuta,\" a tonkatsu shop in Johoku-cho, Yamagata City.\n\nThe original post shows a visit with a family member who had started a job in Yamagata. \"As thick as rumored, full of volume, and tender\" — the satisfaction of the thick-cut tonkatsu comes through.\n\nFor the shop's location, phone number, and business hours, please check Google Maps from \"Shop Location\" at the bottom of this article.\n\nSource: [Threads post](https://www.threads.com/@moriw650/post/DX6WTO7EzzJ)"
+    }
   },
   "embed_url": "https://www.threads.com/@moriw650/post/DX6WTO7EzzJ",
   "embed_platform": "threads",

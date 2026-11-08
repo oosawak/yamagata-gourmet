@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Tonpachi's \"Yamagata Imoni Tonkatsu Set\" — A Local Chain's Seasonal Special",
+      "category": "Other",
+      "summary": "\"Tonpachi,\" a local chain in Yamagata Prefecture. Lunch is available even on weekends and holidays, and a seasonal imoni tonkatsu set has appeared.",
+      "cover_alt": "Watercolor-style illustration of a set meal with imoni and tonkatsu",
+      "html": "<p>&quot;Tonpachi&quot; is a tonkatsu chain local to Yamagata Prefecture.</p>\n<p>According to a Threads post, the lunch menu is available even on weekends and holidays, with free refills of rice and cabbage. The seasonal &quot;Yamagata Imoni Tonkatsu Set&quot; is a very Yamagata set meal, letting you enjoy imoni and tonkatsu at the same time.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Tonpachi (a local chain in Yamagata Prefecture)</li>\n<li>Specialties: Seasonal &quot;Yamagata Imoni Tonkatsu Set&quot;</li>\n<li>Note: Lunch available on weekends and holidays too; free refills of rice and cabbage</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@makoyan1028): https://www.threads.com/@makoyan1028/post/Ddl3aABn98Y</li>\n</ul>\n",
+      "markdown": "\"Tonpachi\" is a tonkatsu chain local to Yamagata Prefecture.\n\nAccording to a Threads post, the lunch menu is available even on weekends and holidays, with free refills of rice and cabbage. The seasonal \"Yamagata Imoni Tonkatsu Set\" is a very Yamagata set meal, letting you enjoy imoni and tonkatsu at the same time.\n\n## Shop Information (from the post)\n\n- Shop Name: Tonpachi (a local chain in Yamagata Prefecture)\n- Specialties: Seasonal \"Yamagata Imoni Tonkatsu Set\"\n- Note: Lunch available on weekends and holidays too; free refills of rice and cabbage\n\n## Source\n\n- Threads post (@makoyan1028): https://www.threads.com/@makoyan1028/post/Ddl3aABn98Y"
+    }
   },
   "embed_url": "https://www.threads.com/@makoyan1028/post/Ddl3aABn98Y",
   "embed_platform": "threads",

@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamadera \"Oyasumi-dokoro Benibana\" — Imoni Set and Safflower Gelato",
+      "category": "Regional cuisine",
+      "summary": "A rest stop in Yamadera, Yamagata City. It features an imoni set for enjoying Yamagata's famous imoni, and safflower gelato exclusive to Yamadera.",
+      "cover_alt": "Watercolor-style illustration of an imoni set and safflower gelato",
+      "html": "<p>&quot;Oyasumi-dokoro Benibana&quot; in Yamadera (Yamagata City) is a place where you can enjoy the local flavors of Yamagata.</p>\n<p>According to an Instagram post (Yamadera Tourism Association), recommended items include the &quot;Imoni Set,&quot; featuring Yamagata's famous imoni; the &quot;Yamadera-style Oyaki Hojukko,&quot; made with seasonal ingredients; and the Yamadera-exclusive &quot;Safflower Gelato.&quot;</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Oyasumi-dokoro Benibana</li>\n<li>Location: Yamadera, Yamagata City, Yamagata Prefecture (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Imoni set, Yamadera-style oyaki &quot;Hojukko,&quot; safflower gelato</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DewCTVKBmdo/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "\"Oyasumi-dokoro Benibana\" in Yamadera (Yamagata City) is a place where you can enjoy the local flavors of Yamagata.\n\nAccording to an Instagram post (Yamadera Tourism Association), recommended items include the \"Imoni Set,\" featuring Yamagata's famous imoni; the \"Yamadera-style Oyaki Hojukko,\" made with seasonal ingredients; and the Yamadera-exclusive \"Safflower Gelato.\"\n\n## Shop Information (from the post)\n\n- Shop Name: Oyasumi-dokoro Benibana\n- Location: Yamadera, Yamagata City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Imoni set, Yamadera-style oyaki \"Hojukko,\" safflower gelato\n\n## Source\n\n- Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DewCTVKBmdo/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DewCTVKBmdo/",
   "embed_platform": "instagram",

@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Tsuruoka \"EN/ME\" — A Gourmet Burger on the Way Back from Kamo Aquarium",
+      "category": "Other",
+      "summary": "A gourmet burger shop in Tsuruoka City. It is also a bakery, and its burgers with delicious buns are introduced.",
+      "cover_alt": "Watercolor-style illustration of a gourmet burger",
+      "html": "<p>This is &quot;EN/ME&quot; in Tsuruoka City.</p>\n<p>The shop's name is read &quot;Enme.&quot;</p>\n<p>A Threads post (@gakuki3116) introduces it as a gourmet burger shop visited on the way back from Kamo Aquarium, famous for its jellyfish displays.</p>\n<p>It is also a bakery, and the burgers have delicious buns.</p>\n<p>The atmosphere is chic — the kind of place that would fit right in in Daikanyama, they say.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: EN/ME (Enme)</li>\n<li>Location: Near Kamo Aquarium, Tsuruoka City, Yamagata Prefecture (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Gourmet burgers</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@gakuki3116): https://www.threads.com/@gakuki3116/post/DepzVFwDDCk</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"EN/ME\" in Tsuruoka City.\n\nThe shop's name is read \"Enme.\"\n\nA Threads post (@gakuki3116) introduces it as a gourmet burger shop visited on the way back from Kamo Aquarium, famous for its jellyfish displays.\n\nIt is also a bakery, and the burgers have delicious buns.\n\nThe atmosphere is chic — the kind of place that would fit right in in Daikanyama, they say.\n\n## Shop Information (from the post)\n\n- Shop Name: EN/ME (Enme)\n- Location: Near Kamo Aquarium, Tsuruoka City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Gourmet burgers\n\n## Source\n\n- Threads post (@gakuki3116): https://www.threads.com/@gakuki3116/post/DepzVFwDDCk\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.threads.com/@gakuki3116/post/DepzVFwDDCk",
   "embed_platform": "threads",

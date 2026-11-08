@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamagata City \"SOBA Cafe Yamawarau\" — A One-Plate Meal of Onigiri and Small Dishes",
+      "category": "Cafés",
+      "summary": "A popular lunch at a cafe in Yamagata City. A one-plate meal of onigiri made with Yamagata rice and six kinds of small dishes, limited to 12 servings, is introduced.",
+      "cover_alt": "Watercolor-style illustration of a one-plate meal of onigiri and small dishes",
+      "html": "<p>&quot;SOBA Cafe Yamawarau&quot; in Yamagata City is a cafe popular for its one-plate lunches of onigiri and small dishes.</p>\n<p>According to an Instagram post, the most popular item, &quot;Honjitsu no Ippin,&quot; is limited to 12 servings: a one-plate meal of onigiri, salad, and six kinds of small dishes. The onigiri use Yamagata rice (Tsuyahime, Yukiwakamaru, Haenuki), chosen to suit the fillings. On the day covered, the small dishes included Yamagata beef tendon imoni, among others (the contents change daily).</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: SOBA Cafe Yamawarau</li>\n<li>Location: 山形県山形市吉野宿90-1</li>\n<li>Business Hours: 11:00–15:00 (last order 14:30); irregular closing days</li>\n<li>Specialties: Honjitsu no Ippin (one-plate meal of onigiri and small dishes, limited to 12 servings)</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reel (@yamagata_ikoyo): https://www.instagram.com/reel/DP1EBItkopn/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "\"SOBA Cafe Yamawarau\" in Yamagata City is a cafe popular for its one-plate lunches of onigiri and small dishes.\n\nAccording to an Instagram post, the most popular item, \"Honjitsu no Ippin,\" is limited to 12 servings: a one-plate meal of onigiri, salad, and six kinds of small dishes. The onigiri use Yamagata rice (Tsuyahime, Yukiwakamaru, Haenuki), chosen to suit the fillings. On the day covered, the small dishes included Yamagata beef tendon imoni, among others (the contents change daily).\n\n## Shop Information (from the post)\n\n- Shop Name: SOBA Cafe Yamawarau\n- Location: 山形県山形市吉野宿90-1\n- Business Hours: 11:00–15:00 (last order 14:30); irregular closing days\n- Specialties: Honjitsu no Ippin (one-plate meal of onigiri and small dishes, limited to 12 servings)\n\n## Source\n\n- Instagram Reel (@yamagata_ikoyo): https://www.instagram.com/reel/DP1EBItkopn/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DP1EBItkopn/",
   "embed_platform": "instagram",

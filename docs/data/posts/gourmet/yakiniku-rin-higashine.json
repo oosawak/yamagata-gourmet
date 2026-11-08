@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Higashine \"Yamagata Beef Yakiniku Rin\" — Grand Opening on November 3, 2026",
+      "category": "Other",
+      "summary": "A Yamagata beef yakiniku shop that grand-opened in Higashine City on November 3, 2026. It is next to Ryushanghai Higashine, one of the city's most popular shops.",
+      "cover_alt": "Watercolor-style illustration of charcoal-grilled Yamagata beef yakiniku",
+      "html": "<p>This is &quot;Yamagata Beef Yakiniku Rin,&quot; newly opened in Higashine City.</p>\n<p>It is a Yamagata beef yakiniku shop that grand-opened on Tuesday, November 3, 2026.</p>\n<p>A Threads post (@yahagi20021225) introduces it as new shop information.</p>\n<p>It is located next to Ryushanghai Higashine, one of the city's most popular restaurants.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Yamagata Beef Yakiniku Rin</li>\n<li>Location: Higashine City, Yamagata Prefecture, next to Ryushanghai Higashine (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Yamagata beef yakiniku</li>\n<li>Opened: November 3, 2026</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@yahagi20021225): https://www.threads.com/@yahagi20021225/post/DfMVKN_mUAW</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Yamagata Beef Yakiniku Rin,\" newly opened in Higashine City.\n\nIt is a Yamagata beef yakiniku shop that grand-opened on Tuesday, November 3, 2026.\n\nA Threads post (@yahagi20021225) introduces it as new shop information.\n\nIt is located next to Ryushanghai Higashine, one of the city's most popular restaurants.\n\n## Shop Information (from the post)\n\n- Shop Name: Yamagata Beef Yakiniku Rin\n- Location: Higashine City, Yamagata Prefecture, next to Ryushanghai Higashine (the exact address was not specified in the post — please check)\n- Specialties: Yamagata beef yakiniku\n- Opened: November 3, 2026\n\n## Source\n\n- Threads post (@yahagi20021225): https://www.threads.com/@yahagi20021225/post/DfMVKN_mUAW\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.threads.com/@yahagi20021225/post/DfMVKN_mUAW",
   "embed_platform": "threads",

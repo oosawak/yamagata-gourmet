@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Jikaseimen Tsurikan (Matsunami, Yamagata City)",
+      "category": "Noodles",
+      "summary": "\"Jikaseimen Tsurikan\" in Matsunami, Yamagata City. It is introduced in a post as a Yamagata ramen shop.",
+      "cover_alt": "Watercolor-style illustration of Yamagata ramen",
+      "html": "<p>This is &quot;Jikaseimen Tsurikan&quot; in Matsunami, Yamagata City.</p>\n<p>A Threads post (@yamagata_ramen_soba) introduces the shop's name, its location in Matsunami, Yamagata City, and that it serves Yamagata ramen.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Jikaseimen Tsurikan</li>\n<li>Location: Matsunami, Yamagata City (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Yamagata ramen (the detailed menu was not specified in the post — please check)</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@yamagata_ramen_soba): https://www.threads.com/@yamagata_ramen_soba/post/C_xsP-fSMqR</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Jikaseimen Tsurikan\" in Matsunami, Yamagata City.\n\nA Threads post (@yamagata_ramen_soba) introduces the shop's name, its location in Matsunami, Yamagata City, and that it serves Yamagata ramen.\n\n## Shop Information (from the post)\n\n- Shop Name: Jikaseimen Tsurikan\n- Location: Matsunami, Yamagata City (the exact address was not specified in the post — please check)\n- Specialties: Yamagata ramen (the detailed menu was not specified in the post — please check)\n\n## Source\n\n- Threads post (@yamagata_ramen_soba): https://www.threads.com/@yamagata_ramen_soba/post/C_xsP-fSMqR\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.threads.com/@yamagata_ramen_soba/post/C_xsP-fSMqR",
   "embed_platform": "threads",

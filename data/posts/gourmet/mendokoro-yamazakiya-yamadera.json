@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Yamadera \"Mendokoro Yamazakiya\" — Mukitake Soba and Chuka Soba",
+      "category": "Noodles",
+      "summary": "\"Mendokoro Yamazakiya\" in Yamadera. Its \"mukitake soba\" with wild mukitake mushrooms, the long-loved \"chuka soba,\" and \"kezuri ichigo\" for after the meal are introduced.",
+      "cover_alt": "Watercolor-style illustration of mukitake soba and chuka soba",
+      "html": "<p>This is &quot;Mendokoro Yamazakiya&quot; in Yamadera.</p>\n<p>An Instagram post (@yamadera_tourism_association) introduces the &quot;mukitake soba,&quot; made with wild mukitake mushrooms, and the &quot;chuka soba,&quot; loved for many years. After the meal, the &quot;kezuri ichigo&quot; — frozen strawberries shaved thin — is also recommended.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Mendokoro Yamazakiya</li>\n<li>Location: Yamadera (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Mukitake soba, chuka soba, kezuri ichigo</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DeynJjGBlKc/</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Mendokoro Yamazakiya\" in Yamadera.\n\nAn Instagram post (@yamadera_tourism_association) introduces the \"mukitake soba,\" made with wild mukitake mushrooms, and the \"chuka soba,\" loved for many years. After the meal, the \"kezuri ichigo\" — frozen strawberries shaved thin — is also recommended.\n\n## Shop Information (from the post)\n\n- Shop Name: Mendokoro Yamazakiya\n- Location: Yamadera (the exact address was not specified in the post — please check)\n- Specialties: Mukitake soba, chuka soba, kezuri ichigo\n\n## Source\n\n- Instagram Reel (@yamadera_tourism_association): https://www.instagram.com/reel/DeynJjGBlKc/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.instagram.com/reel/DeynJjGBlKc/",
   "embed_platform": "instagram",

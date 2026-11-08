@@ -18,7 +18,14 @@
     "mime": "image/webp"
   },
   "i18n": {
-    "en": {}
+    "en": {
+      "title": "Shinjo \"Niboshi Chuka Soba Arata\" — Shinchan Ramen",
+      "category": "Noodles",
+      "summary": "A niboshi ramen shop in Shinjo City, Yamagata Prefecture. The Shinchan ramen (regular size) and a seasoned egg are introduced.",
+      "cover_alt": "Watercolor-style illustration of niboshi ramen",
+      "html": "<p>This is &quot;Niboshi Chuka Soba Arata&quot; in Shinjo City, Yamagata Prefecture.</p>\n<p>A Threads post (@hiroshyy0528) introduces the Shinchan ramen (regular size) and a seasoned egg, from a trip to Shinjo early in the morning, driven by a craving for niboshi.</p>\n<h2>Shop Information (from the post)</h2>\n<ul>\n<li>Shop Name: Niboshi Chuka Soba Arata</li>\n<li>Location: Shinjo City, Yamagata Prefecture (the exact address was not specified in the post — please check)</li>\n<li>Specialties: Shinchan ramen, seasoned egg</li>\n</ul>\n<h2>Source</h2>\n<ul>\n<li>Threads post (@hiroshyy0528): https://www.threads.com/@hiroshyy0528/post/DfEmdAkGu7M</li>\n<li>Business hours, closing days, and other details may change. Please check with the shop for the latest information.</li>\n</ul>\n",
+      "markdown": "This is \"Niboshi Chuka Soba Arata\" in Shinjo City, Yamagata Prefecture.\n\nA Threads post (@hiroshyy0528) introduces the Shinchan ramen (regular size) and a seasoned egg, from a trip to Shinjo early in the morning, driven by a craving for niboshi.\n\n## Shop Information (from the post)\n\n- Shop Name: Niboshi Chuka Soba Arata\n- Location: Shinjo City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Shinchan ramen, seasoned egg\n\n## Source\n\n- Threads post (@hiroshyy0528): https://www.threads.com/@hiroshyy0528/post/DfEmdAkGu7M\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information."
+    }
   },
   "embed_url": "https://www.threads.com/@hiroshyy0528/post/DfEmdAkGu7M",
   "embed_platform": "threads",
