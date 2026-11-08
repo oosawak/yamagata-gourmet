@@ -44,6 +44,46 @@
       "cover_alt": "A photo-style image of a wooden café in the mountains",
       "markdown": "Beyond the rising steam is a small café. A coffee break during a stroll is a lovely way to experience the slower rhythm of a place.\n\nThis demo is written as a light, travel-diary-style food story.",
       "source_hash": "32f38a04664da7fc362cdc027dc5037a913fa7f9b2bbaf9e8054aecc573040a0"
+    },
+    "gourmet:kirikiri-tendo": {
+      "title": "Tendo's Eatery \"Kirikiri\" — Tendon with Large Kakiage",
+      "category": "Other",
+      "summary": "A soba restaurant in Takadama, Tendo City, reopened as an eatery. Its kakiage tendon, braised pork belly, and homemade pudding are highly acclaimed.",
+      "cover_alt": "A watercolor-style illustration of a large kakiage tendon",
+      "markdown": "The soba restaurant \"Kirikiri\" in Takadama, Tendo City, has reopened as an eatery.\n\nAccording to a Threads post, the tendon topped with a large kakiage is crispy and filling. The melt-in-your-mouth braised pork belly (a la carte) and the brown sugar pudding (with homemade coffee caramel sauce) were also delicious. A place worth considering if you are undecided on where to have lunch in Tendo.\n\n## Shop Information (from the post)\n\n- Shop Name: Kirikiri\n- Location: 山形県天童市高擶北137-4\n- Business Hours: 11:00–14:30 (last order)\n- Specialties: Kakiage tendon, braised pork belly, brown sugar pudding\n\n## Source\n\n- Threads post (@mii.yamagata25): https://www.threads.com/@mii.yamagata25/post/DVlFtL8kqO7\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n",
+      "source_hash": "d6ffedeffceeb242d92cbc1526c7a65e990c8c9615424ab7fa8efa11cb399e09"
+    },
+    "gourmet:satonishiki-imoni-lunch": {
+      "title": "Higashine \"Sato Nishiki\" Imoni Lunch — Imoni, Onigiri, and Homemade Side Dishes",
+      "category": "Regional cuisine",
+      "summary": "An imoni lunch offered by Sato Nishiki in Higashine City. The set comes with imoni, onigiri, and homemade side dishes, and there are cherry sweets as well.",
+      "cover_alt": "Watercolor-style illustration of an imoni lunch",
+      "markdown": "At \"Sato Nishiki\" in Higashine City, you can enjoy a lunch featuring Yamagata's famous imoni.\n\nAccording to a post on Threads, the lunch is a set of imoni, onigiri, and homemade side dishes, and there are also sweets made with cherries. The post notes that imoni in the inland region is soy-sauce-based, with ingredients such as taro, beef, konjac, burdock root, mushrooms, and green onions, and that autumn \"imoni gatherings\" are a seasonal tradition in Yamagata.\n\n## Shop Information (from the post)\n\n- Shop Name: Sato Nishiki (Sato Nishiki Ltd.)\n- Location: 山形県東根市三日町2-1-24\n- Specialties: Imoni lunch (imoni, onigiri, homemade side dishes), cherry sweets\n\n## Source\n\n- Threads post (@yu.satonishiki): https://www.threads.com/@yu.satonishiki/post/Dc8aZ2lGlSA\n- Business hours, availability, and other details may change. Please check with the shop for the latest information.\n",
+      "source_hash": "93df76beddf86c194ff5ad4838d93c83b8a96b57b61ec8071e181afb68c805ca"
+    },
+    "gourmet:menya-aoi-nanyo": {
+      "title": "Tantanmen at Nanyo's \"Menya Aoi\"",
+      "category": "Noodles",
+      "summary": "A popular restaurant in Nanyo City, Yamagata Prefecture, known for a tantanmen that keeps customers coming back.",
+      "cover_alt": "Watercolor-style illustration of tantanmen",
+      "markdown": "\"Menya Aoi\" in Nanyo City, Yamagata Prefecture, is a popular spot for tantanmen.\n\nAccording to an Instagram post (@odekake.spot.tohoku), the restaurant has many regulars and is described as serving \"one-of-a-kind tantanmen.\" A place worth considering when looking for ramen in Nanyo.\n\n## Shop Information (from the post)\n\n- Shop Name: Menya Aoi\n- Location: Nanyo City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Tantanmen\n- Note: Parking available\n\n## Source\n\n- Instagram Reels (@odekake.spot.tohoku): https://www.instagram.com/reel/DPyFjqLEwU9/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n",
+      "source_hash": "7169e08b30d40b2131dcd7b37fa269a0074308b0dd589cb2b2ea0fe17d61b933"
+    },
+    "gourmet:tsuki-coffee-yamadera": {
+      "title": "Yamadera \"Tsuki Coffee Yamadera Nan-in\" — Siphon-Brewed Specialty Coffee",
+      "category": "Cafés",
+      "summary": "A coffee shop in Yamadera, Yamagata City, offering specialty coffee carefully brewed with a siphon, paired with sweets.",
+      "cover_alt": "Watercolor-style illustration of siphon coffee",
+      "markdown": "\"Tsuki Coffee Yamadera Nan-in\" in Yamadera, Yamagata City, is a spot where you can enjoy specialty coffee.\n\nAccording to an Instagram post (Yamadera Tourism Association), the coffee is carefully brewed using a siphon. They also offer pairings of sweets and coffee, making it a great spot for a cafe break while exploring Yamadera.\n\n## Shop Information (from the post)\n\n- Shop Name: Tsuki Coffee Yamadera Nan-in\n- Location: Yamadera, Yamagata City, Yamagata Prefecture (the exact address was not specified in the post — please check)\n- Specialties: Siphon-brewed specialty coffee, pairings with sweets\n\n## Source\n\n- Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/De1L6jHT5aK/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n",
+      "source_hash": "f12d00faa85e82bb218bdd93c56f6a6537d30a3742cabc998dece4920cfbac61"
+    },
+    "gourmet:shoseido-yamadera": {
+      "title": "Yamadera \"Shoseido\" — Yamadera Manju and Morokoshi",
+      "category": "Sweets",
+      "summary": "\"Shoseido\" in Yamadera. Its specialties are souvenirs such as Yamadera manju and morokoshi, plus a refreshing kuzu ice.",
+      "cover_alt": "Watercolor-style illustration of Yamadera manju and corn",
+      "markdown": "This is \"Shoseido\" in Yamagata City's Yamadera.\n\nInstagram posts (@yamadera_tourism_association) feature \"Yamadera manju,\" a recommended souvenir from Yamadera, and the long-loved \"morokoshi.\" They also mention \"kuzu ice,\" best enjoyed chilled — perfect for a break while strolling through Yamadera.\n\n## Shop Information (from the post)\n\n- Shop Name: Shoseido\n- Location: Yamadera (the exact address was not specified in the post — please check)\n- Specialties: Yamadera manju, morokoshi, kuzu ice\n\n## Source\n\n- Instagram Reels (@yamadera_tourism_association): https://www.instagram.com/reel/Deq4wGmhRCY/\n- Business hours, closing days, and other details may change. Please check with the shop for the latest information.\n",
+      "source_hash": "25dfe01ac4498cd2a963b62a0f4d7d1ba416116b52132360a3c5ef94ca2b7b83"
     }
   }
 }
