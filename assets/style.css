@@ -84,3 +84,4 @@
 
 /* Cover images: show the whole image at its natural aspect ratio, never cropped to a fixed frame (2026-10-26) */
 .tile-image,.articlecover{aspect-ratio:auto;object-fit:initial}
+.listenbar{margin-bottom:20px}
