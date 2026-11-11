@@ -50,6 +50,9 @@ jobs:
           cp dist/index.html docs/index.html
           mkdir -p docs/en
           cp dist/en/index.html docs/en/index.html
+          rsync -a --delete dist/posts/ docs/posts/
+          rsync -a --delete dist/og/ docs/og/
+          cp dist/sitemap.xml docs/sitemap.xml
       - name: Commit generated changes
         run: |
           git add -A data docs preview.html
