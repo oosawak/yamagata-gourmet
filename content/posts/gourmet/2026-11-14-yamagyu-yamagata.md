@@ -4,7 +4,7 @@ date: '2026-11-14'
 category: その他
 summary: 山形市の「山牛」。山形牛の牛カツ定食が紹介されています。ご飯のおかわり無料です。
 map_query: 山牛 山形市
-cover: gourmet/yamagyu-yamagata.webp
+cover: gourmet/yamagyu-yamagata-v2.webp
 cover_alt: 山形牛の牛カツ定食を描いた水彩調イラスト
 type: article
 source_url: https://www.threads.com/@eats_samurai1725/post/Dfq1hmEn1Hd
